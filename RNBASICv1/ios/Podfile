@@ -27,7 +27,15 @@ target 'RNBASICv1' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  pod 'RNFirebase', :path => '../node_modules/react-native-firebase'
+ 
+  pod 'Firebase/Core', '~> 6.3.0'
+  #pod 'RNFirebase', :path => '../node_modules/react-native-firebase'
+  pod 'Fabric', '~> 1.10.2'
+  pod 'Crashlytics', '~> 3.13.2'
+
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
+  pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
 
   target 'RNBASICv1Tests' do
     inherit! :search_paths
